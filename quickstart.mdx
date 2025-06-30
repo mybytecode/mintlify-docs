@@ -1,97 +1,64 @@
 ---
 title: 'Quickstart'
-description: 'Start building awesome documentation in under 5 minutes'
+description: 'Start building AI workflows in under 5 minutes'
 ---
 
-## Setup your development
+Get up and running with your first MCP server in just a few steps. This guide walks you through signing in,
+deploying an MCP server, and testing it in the playground.
 
-Learn how to update your docs locally and deploy them to the public.
-
-### Edit and preview
-
-<AccordionGroup>
-  <Accordion icon="github" title="Clone your docs locally">
-    During the onboarding process, we created a repository on your Github with
-    your docs content. You can find this repository on our
-    [dashboard](https://dashboard.mintlify.com). To clone the repository
-    locally, follow these
-    [instructions](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
-    in your terminal.
-  </Accordion>
-  <Accordion icon="rectangle-terminal" title="Preview changes">
-    Previewing helps you make sure your changes look as intended. We built a
-    command line interface to render these changes locally. 
-    1. Install the
-    [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview the
-    documentation changes locally with this command: ``` npm i -g mintlify ```
-    2. Run the following command at the root of your documentation (where
-    `docs.json` is): ``` mintlify dev ```
-    <Note>
-      If you’re currently using the legacy ```mint.json``` configuration file, please update the Mintlify CLI:
+###  Step 1: Sign In or Create an Account
+Go to [platform.contexaai.com](https://platform.contexaai.com) and sign in using your credentials.
+Don’t have an account? Click Sign Up to register in seconds.
 
 
-      ```npm i -g mintlify@latest```
-      And run the new upgrade command in your docs repository:
+### Step 2: Deploy Your MCP Server
+Choose one of the following ways to deploy:
 
-      ```mintlify upgrade```
-      You should now be using the new ```docs.json``` configuration file. Feel free to delete the ```mint.json``` file from your repository.
-    </Note>
-  </Accordion>
-</AccordionGroup>
+**🔍 Option 1: Use a Curated Server**
 
-### Deploy your changes
+Navigate to the MCP Directory.
+Browse verified servers contributed by the verified developers and organizations.
+Click Deploy on any server to set it up instantly.
 
-<AccordionGroup>
+**🔗 Option 2: Bring Your Own Server**
 
-<Accordion icon="message-bot" title="Install our Github app">
-  Our Github app automatically deploys your changes to your docs site, so you
-  don't need to manage deployments yourself. You can find the link to install on
-  your [dashboard](https://dashboard.mintlify.com). Once the bot has been
-  successfully installed, there should be a check mark next to the commit hash
-  of the repo.
-</Accordion>
-<Accordion icon="rocket" title="Push your changes">
-  [Commit and push your changes to
-  Git](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository#about-git-push)
-  for your changes to update in your docs site. If you push and don't see that
-  the Github app successfully deployed your changes, you can also manually
-  update your docs through our [dashboard](https://dashboard.mintlify.com).
-</Accordion>
+Go to Directory > Add Server > via GitHub. [Deploy via Github](https://platform.contexaai.com/mcp-directory/github)
+Enter public GitHub repo URL containing your MCP code.
+Configure deployment settings and click Deploy.
 
-</AccordionGroup>
+**📄 Option 3: Create from OpenAPI Spec**
 
-## Update your docs
+Navigate to Directory > Add Server > via OpenAPI. [Deploy via OpenAPI](https://platform.contexaai.com/mcp-directory/open-api)
+Upload your OpenAPI 3.0 spec file or paste the spec in the editor.
+Name your server and click Deploy.
 
-Add content directly in your files with MDX syntax and React components. You can use any of our components, or even build your own.
+### Step 3: Test in Playground
 
-<CardGroup>
+Once your MCP server is deployed:
+Go to the Playground section.
+Select your MCP server from the list.
+Choose an LLM model (e.g., GPT-4, GPT-4o, GPT-4o-mini, etc.).
+Send requests and view live responses from your MCP server.
+You can compare results across different models to evaluate behavior and performance.
 
-<Card title="Add Content With MDX" icon="file" href="/essentials/markdown">
-  Add content to your docs with MDX syntax.
-</Card>
+### Step 4: View Logs and Analytics (Coming Soon)
 
-<Card
-  title="Add Code Blocks"
-  icon="square-code"
-  href="/essentials/code"
->
-  Add code directly to your docs with syntax highlighting.
-</Card>
+Head to Observability > Logs & Analytics.
+Use filters to monitor real-time usage, performance, and errors.
+Our open-source client library lets you easily integrate logging into your MCP server code.
 
-<Card
-  title="Add Images"
-  icon="image"
-  href="/essentials/images"
->
-  Add images to your docs to make them more engaging.
-</Card>
+### Step 5: Set up Access Control (Coming Soon)
 
-<Card
-  title="Add Custom Components"
-  icon="puzzle-piece"
-  href="/essentials/reusable-snippets"
->
-  Add templates to your docs to make them more reusable.
-</Card>
+Head to Access Control > Teams & Policies.
+Define access policies at the team or individual level.
+Control visibility and usage of MCP servers and tools across departments or clients.
 
-</CardGroup>
+### You’re All Set!
+You’ve now:
+- Signed in
+- Deployed your first MCP server
+- Tested it with real models
+- Viewed logs and metrics (Coming Soon)
+- (Optionally) Set up access control (Coming Soon)
+
+Start building intelligent, composable tools with the power of Model Context Protocols and LLMs.
